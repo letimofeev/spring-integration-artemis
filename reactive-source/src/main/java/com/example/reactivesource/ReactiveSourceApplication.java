@@ -14,10 +14,12 @@ import org.springframework.integration.jms.dsl.Jms;
 import org.springframework.jms.core.JmsTemplate;
 import org.springframework.messaging.Message;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RestController;
 import reactor.core.publisher.Flux;
 
 import javax.jms.ConnectionFactory;
 
+@RestController
 @SpringBootApplication
 public class ReactiveSourceApplication {
 
